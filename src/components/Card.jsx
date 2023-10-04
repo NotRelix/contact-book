@@ -5,14 +5,14 @@ function Card({ person, contacts, setContacts }) {
         <>
             {!person.Edit ? (
                 <>
-                    <p>{person.ID}</p>
-                    <p>{person.Name}</p>
-                    <p>{person.Age}</p>
-                    <p>{person.Course}</p>
-                    <p>{person.ContactNumber}</p>
+                    <p>ID: {person.ID}</p>
+                    <p>Name: {person.Name}</p>
+                    <p>Age: {person.Age}</p>
+                    <p>Course: {person.Course}</p>
+                    <p>Contact # {person.ContactNumber}</p>
                 </>
             ) : (
-                <div className="edit">
+                    <div className="edit">
                         <input disabled type="text" value={person.ID} onChange={(e) => {
                         person.ID = e.target.value;
                         setContacts([...contacts])

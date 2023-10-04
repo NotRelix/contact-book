@@ -24,11 +24,12 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(241, 241, 241);
     margin: 30px;
     padding: 20px;
     border-radius: 8px;
     width: 200px;
+    text-align: left;
 }
 
 .delete {
